@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas Interativa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gerenciador-tarefas">
+        <h1>Lista de Tarefas</h1>
+
+        <!-- Seção de Adição de Tarefas -->
+        <div id="adicionar-tarefa">
+            <input type="text" id="nome-tarefa" placeholder="Nome da Tarefa">
+            <select id="prioridade-tarefa">
+                <option value="alta">Alta</option>
+                <option value="media">Média</option>
+                <option value="baixa">Baixa</option>
+            </select>
+            <button id="adicionar-tarefa-btn">Adicionar Tarefa</button>
+        </div>
+
+        <!-- Seção Legenda de Prioridade -->
+        <div id="legenda-prioridade">
+            <h2>Legenda das Prioridades</h2>
+            <div class="item-legenda alta">Alta</div>
+            <div class="item-legenda media">Média</div>
+            <div class="item-legenda baixa">Baixa</div>
+        </div>
+
+        <!-- Seção de Tarefas Pendentes -->
+        <div id="tarefas-pendentes">
+            <h2>Tarefas Pendentes</h2>
+            <ul id="lista-tarefas-pendentes"></ul>
+        </div>
+
+        <!-- Seção de Tarefas Concluídas -->
+        <div id="tarefas-concluidas">
+            <h2>Tarefas Concluídas</h2>
+            <button id="excluir-tarefas-concluidas-btn">Excluir Todas as Concluídas</button>
+            <ul id="lista-tarefas-concluidas"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#gerenciador-tarefas {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#adicionar-tarefa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#adicionar-tarefa input, #adicionar-tarefa select {
+    padding: 10px;
+    font-size: 16px;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#adicionar-tarefa button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#legenda-prioridade {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#legenda-prioridade h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#legenda-prioridade .item-legenda {
+    padding: 5px;
+    margin: 7px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 70px;
+}
+
+#legenda-prioridade .item-legenda.alta {
+    background-color: red;
+}
+
+#legenda-prioridade .item-legenda.media {
+    background-color: orange;
+}
+
+#legenda-prioridade .item-legenda.baixa {
+    background-color: lightblue;
+}
+
+#tarefas-pendentes ul, #tarefas-concluidas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.item-tarefa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.item-tarefa.alta {
+    background-color: #ffcccc;
+}
+
+.item-tarefa.media {
+    background-color: #ffe5cc;
+}
+
+.item-tarefa.baixa {
+    background-color: #ccf2ff;
+}
+
+.item-tarefa button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.item-tarefa button.concluir-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.item-tarefa button.excluir-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#excluir-tarefas-concluidas-btn {
+    padding: 10px 20px;
+    background-color: #dc3545; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.item-tarefa.alta button {
+    background-color: red;
+}
+
+.item-tarefa.media button {
+    background-color: orange;
+}
+
+.item-tarefa.baixa button {
+    background-color: lightblue;
+}
